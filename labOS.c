@@ -22,6 +22,20 @@ wait(NULL);
 printf("\nExiting main process\n");
 return 0;
 }
+Output:
+ui
+dsfg
+gfh
+tyrert
+yuk
+sdg
+cat p
+ui
+dsfg
+gfh
+tyrert
+yuk
+sdg
 
                              FIFO ALGORITHM
 #include<stdio.h>
@@ -55,6 +69,31 @@ printf("%d",c[k]);
 }
 printf("\n \tNo of page faults occurred are %d",npf) ;
 }
+OUTPUT:
+Enter no of pages: 20
+Enter pages: 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1
+Enter no of page frames: 3
+7
+70
+701
+012
+012
+123
+230
+304
+042
+423
+230
+230
+230
+301
+012
+012
+012
+127
+270
+701
+No of page faults occurred are 15
 
 
 //                ROUND ROBIN
@@ -132,3 +171,20 @@ printf("\n Avg wating time: %f",avgwt);
 printf("\n Total turnaroundtime: %d",ttt);
 printf("\n Avg turnaround time: %f",(float)ttt/m);
 }
+OUTPUT:
+Enter the number of Processes:3
+Enter time slice:4
+Enter the process name:A1
+Enter the process time:4
+Enter the process name:A2
+Enter the process time:6
+Enter the process name:A3
+Enter the process time:3
+pname ptime wtime turnaroundtime
+A1 4 0 4
+A2 6 7 13
+A3 3 8 11
+Total waiting time: 15
+Avg.wating time: 5.000000
+Total turnaroundtime: 28
+Avg.turnaround time: 9.333333
